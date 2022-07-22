@@ -45,11 +45,18 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-end">
+    <div class="container-fluid fixed-top px-0 wow fadeIn bg-primary " data-wow-delay="0.1s">
+
+        <div class="top-bar row gx-0 d-none d-lg-flex bg-white">
+            <div class="col-lg-3 px-5 text-primary text-center">
+            </div>
+            <div class="col-lg-3 px-5 text-primary bg-secondary text-center">
                 <small>30% Descuento en tu primera compra</small>
+            </div>
+            <div class="col-lg-3 px-5 text-primary text-center">
                 <small>¡Nuevos Productos!</small>
+            </div>
+            <div class="col-lg-3 px-5 text-primary text-center">
             </div>
         </div>
 
@@ -62,25 +69,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Servicios</a>
+                    <a href="index.html" class="nav-item nav-link active text-light">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link text-light">Servicios</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Perro</a>
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown">Perro</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">Alimentos</a>
+                            <a href="feature.html" class="dropdown-item ">Accesorios</a>
+                            <a href="testimonial.html" class="dropdown-item">Juguetes</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown">Gato</a>
                         <div class="dropdown-menu m-0">
                             <a href="blog.html" class="dropdown-item">Alimentos</a>
                             <a href="feature.html" class="dropdown-item">Accesorios</a>
                             <a href="testimonial.html" class="dropdown-item">Juguetes</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gato</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Alimentos</a>
-                            <a href="feature.html" class="dropdown-item">Accesorios</a>
-                            <a href="testimonial.html" class="dropdown-item">Juguetes</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Promociones</a>
+                    <a href="contact.html" class="nav-item nav-link text-light">Promociones</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
@@ -323,15 +330,30 @@
 
 
     <!-- Guía de compra Start -->
-    <div class="container-fluid bg-primary bg-icon mt-5 py-6">
-        <div class="container">
+    <div class="container-fluid bg-secondary mt-5 py-5">
+        <div class="container-fluid ">
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-5 background=#001952 text-white mb-3">¿Cómo comprar?</h1>
-                    <p class="text-white mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.</p>
+                    <h1 class="display-5 text-primary mb-3">¿Cómo comprar?</h1>
+                    <div class="container-fluid" >
+                        <div class="row">
+                        <div class="col-lg-4 bg-primary text-white" style="border-radius:10px; margin:2px">
+                            <p class="font-weight-bold text-white">SELECCIONA LOS PRODUCTOS</p><br>
+                            <p class="mb-4">Explora el sitio y selecciona los productos que necesitas</p></div>
+                        <div class="col-lg-4 bg-primary text-white" style="border-radius:10px; margin:2px">
+                            <p>COMPRA VIA WHATSAPP</p><br>
+                            <p class="mb-4">Haz clic en el bot[on de WhatsApp e indícanos los productos que deseas comprar. Te diremos el monto total y las opciones de pago</p></div>
+                        <div class="col-lg-4  bg-primary text-white" style="border-radius:10px; margin:2px">
+                            <p>ENVÍO DE COMPROBANTE</p><br>
+                            <p class="mb-4">Una vez que hagás el pago, envíanos el comprobante. Procederemos a enviar tu pedido medio del servicio de entrega que elegiste</p></div>
+                        <div class="col-lg-4 bg-primary text-white" style="border-radius:10px; margin:2px">
+                            <p>ENTREGA DE PRODUCTOS</p><br>
+                            <p class="mb-4">Recibes tus productos y haces feliz a tu mascota</p></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Visit Now</a>
+                    <a class="btn btn-lg btn-primary rounded-pill py-3 px-5" href="">Comprar</a>
                 </div>
             </div>
         </div>
@@ -364,43 +386,46 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-5 mb-4">Ubicación Tienda Física</h1>
+                    <p class="mb-4">De Canal 7, 600 m Oeste, San José, San José</p>
+                </div>
                 <div class="col-lg-6 wow" data-wow-delay="0.1s">
                     <div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9544696869316!2d-84.11895440942246!3d9.937746470236153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fca709c53893%3A0xb4c4f7e7ede3d8a6!2zVsOtYSAxMDQsIE51bmNpYXR1cmEsIFNhbiBKb3PDqQ!5e0!3m2!1ses!2scr!4v1658206339593!5m2!1ses!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-5 mb-4">Ubicación Tienda Física</h1>
-                    <p class="mb-4">De Canal 7, 600 m Oeste, San José, San José</p>
-                </div>
+
             </div>
         </div>
     </div>
     <!--  Historia y Ubicación End -->
 
     <!-- Beneficios Start -->
-    <div class="container-fluid bg-primary class bg-icon mt-5 py-6">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-5 text-white mb-3">Beneficios de comprar en Mundo Mascotas</h1>
-                    <div style="border-radius:10px" class="text-dark mb-4 bg-white border-top border-bottom mt-3">
+    <div class="container-fluid class mt-5">
+        <div class="container-fluid bg-secondary py-5">
+            <div class="row g-6 align-items-center  col-center">
+                <div class="col-md-7 align-items-center  wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="display-5 text-primary mb-3 ">Beneficios de comprar en Mundo Mascotas</h1>
 
-                        <div>
+                    <div class="container-fluid align-items-center  bg-white mt-3" style="border-radius:10px" >
+                        <div class="row">
+                        <div class="col p-3 text-dark" style="border-radius:10px; margin:2px">
                             <p class="text-dark mb-4">Atención personalizada vía WA +506 8896 9700</p>
                             <p class="text-dark mb-4">Compra fácil y 100% seguro 24/7</p>
                         </div>
-                        <div><p class="text-dark mb-4">Pagá por medio de transferencias sinpe o tarjetas</p></div>
-                        <div>
+                        <div class="col p-3 text-dark" style="border-radius:10px; margin:2px">
+                            <p class="text-dark mb-4">Pagá por medio de transferencias sinpe o tarjetas</p>
+                        </div>
+                        <div class="col p-3 text-dark" style="border-radius:10px; margin:2px">
                             <p class="text-dark mb-4">Los mejores precios y promociones</p>
                             <p class="text-dark mb-4">Apoyas a organizaciones de rescate de animales</p>
                         </div>
-
                     </div>
 
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">Comprar</a>
+                    <a class="btn btn-lg btn-primary rounded-pill py-3 px-5" href="">Comprar</a>
                 </div>
             </div>
         </div>
@@ -426,8 +451,8 @@
                     <p class="infofooter"><i class="fa fa-phone-alt me-3"></i>+506 8896 9700</p>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Ubicación</h4>
                     <p class="infofooter"><i class="fa fa-map-marker-alt me-3"></i>De Canal 7, 600 metros Oeste, San José, Costa Rica</p>
+                    <h4 class="text-light mb-4">Ubicación</h4>
                 </div>
             </div>
         </div>
