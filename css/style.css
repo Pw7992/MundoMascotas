@@ -8,6 +8,23 @@ h1, h2, h3, h4, h5, h6{
     font-family: OpenSans;
 }
 
+h1 {
+    font-size: 4rem !important;
+}
+
+h2{
+    font-size: 3.5rem !important;
+}
+
+h3{
+font-size: 3rem !important;
+}
+
+h4{
+font-size: 2rem !important;
+}
+
+
 :root {
     --primary: #001952;
     --secondary: #6cc5e9;
@@ -114,14 +131,14 @@ h1, h2, h3, h4, h5, h6{
 
 .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
-    color: #555555;
+    color: #FFFFFF;
     font-weight: 500;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--dark);
+    color: var(--secondary);
 }
 
 @media (max-width: 991.98px) {
@@ -153,6 +170,10 @@ h1, h2, h3, h4, h5, h6{
         transition: .5s;
         opacity: 1;
     }
+
+   .navbar {
+    background-color: var(--primary);
+   } 
 }
 
 
@@ -199,8 +220,7 @@ h1, h2, h3, h4, h5, h6{
 
 .page-header {
     padding-top: 12rem;
-    padding-bottom: 6rem;
-    background: url(../img/carousel-1.jpg) top right no-repeat;
+    padding-bottom: 2rem;
     background-size: cover;
 }
 
@@ -404,4 +424,26 @@ h1, h2, h3, h4, h5, h6{
     padding: 5px;
     height: auto;
     width:200px;
+}
+
+.btn-wsp{
+position: fixed;
+width: 55px;
+height: 55px;
+line-height: 55px;
+bottom: 30px;
+right: 30px;
+background: #0df053;
+color: #FFFFFF;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+z-index: 100;
+}
+
+.btn-wsp:hover{
+text-decoration: none;
+color: #0df053;
+background: #FFFFFF;
 }
