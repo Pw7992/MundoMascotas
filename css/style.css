@@ -221,8 +221,9 @@ font-size: 1rem;
 
 .page-header {
     padding-top: 12rem;
-    padding-bottom: 2rem;
-    background-size: cover;
+    padding-bottom: 6rem;
+    background: url(../img/servicios2.jpg) top right no-repeat;
+    background-size:cover;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -367,6 +368,9 @@ font-size: 1rem;
     background: var(--primary);
 }
 
+.beneficios{
+    border-radius: 10px;
+}
 
 /*** Footer ***/
 .footer {
