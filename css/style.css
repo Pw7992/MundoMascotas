@@ -1,11 +1,11 @@
 /********** Template CSS **********/
 @font-face {
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif;
     src: url(OpenSans.ttf);
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: OpenSans;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 h1 {
@@ -454,4 +454,12 @@ background: #FFFFFF;
 
 .body {
     background: #F3F3F3 !important;
+}
+
+.filtros {
+    border-radius: 8px;
+}
+
+.marca {
+    font-weight: bolder;
 }
