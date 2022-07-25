@@ -9,19 +9,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-    font-size: 4rem !important;
+    font-size: 3rem;
 }
 
 h2{
-    font-size: 3.5rem !important;
+    font-size: 2.5rem ;
+    font-weight:700;
 }
 
 h3{
-font-size: 3rem !important;
+font-size: 2rem;
 }
 
 h4{
-font-size: 2rem !important;
+font-size: 1rem;
 }
 
 
@@ -145,7 +146,7 @@ font-size: 2rem !important;
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
-        background: #FFFFFF;
+        background: #F3F3F3;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -423,7 +424,6 @@ font-size: 2rem !important;
     margin: 5px;
     padding: 5px;
     height: auto;
-    width:200px;
 }
 
 .btn-wsp{
@@ -446,4 +446,12 @@ z-index: 100;
 text-decoration: none;
 color: #0df053;
 background: #FFFFFF;
+}
+
+.como-comprar--card {
+    border-radius: 8px;
+}
+
+.body {
+    background: #F3F3F3 !important;
 }
