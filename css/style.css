@@ -142,6 +142,10 @@ font-size: 1rem;
     color: var(--secondary);
 }
 
+.btn-responsive {
+    color: white;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
@@ -222,7 +226,6 @@ font-size: 1rem;
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/servicios2.jpg) top right no-repeat;
     background-size:cover;
 }
 
@@ -319,6 +322,10 @@ font-size: 1rem;
 
 .product-item small a:hover {
     color: var(--primary) !important;
+}
+
+.text-productos{
+min-height: 57.69px;
 }
 
 
