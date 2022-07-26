@@ -38,6 +38,8 @@
      <!--librería íconos adicional-->
      <script src="https://kit.fontawesome.com/2695eaeca5.js" crossorigin="anonymous"></script>
 
+     <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 
 <body>
@@ -160,7 +162,7 @@
 
 
     <!-- Product Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" x-data="{filtro: 'todos'}">
         <div class="container">
             <div class="row g-0 gx-5 align-items-end">
                 <div class="col-lg-6">
@@ -169,169 +171,186 @@
                 <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                         <li class="nav-item me-2">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" href="#tab-1">Concentrado</a>
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" x-on:click="filtro='todos'">Todos</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" href="#tab-2">H&#250;medo</a>
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" x-on:click="filtro='concentrado'">Concentrado</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='enlatado'">Enlatado</a>
                         </li>
                         <li class="nav-item me-0">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" href="#tab-3">Treats</a>
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='treats'">Treats</a>
                         </li>
+                       
                     </ul>
                 </div>
             </div>
             <div class="tab-content">
-                <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="tab-pane fade show p-0 active">
                     <div class="row g-4">
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                        <!-- item 1 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/nutrisourcekitten_chickenrice.jpeg" alt="Concentrado NutriSource Cat and Kitten Chicken & Rice ">
+                                    <img class="img-fluid" src="img/nutrisourcekitten_chickenrice.png" alt="Concentrado NutriSource Cat and Kitten Chicken & Rice ">
                                 </div>
                                 <div class="text-start p-4">
-                                    <h6 class="marca"> NutriSource </h6> <p> Cats and Kitten Chicken & Rice </p> 
-                                         <span class="text-body me-1">6.6 libras</span>
-                                    <span class="text-primary me-1">₡13.705.00</span>                                    
-                               
+                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken & Rice </h6>
+                                         <p class="text-body me-1 mb-0">3 kilos</p>
+                                    <p class="text-primary me-1 mb-0">₡13.705.00</p>                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cats%20&%20Kitten%20Chicken%20&%20Rice%203%20kilos" target="_blank">
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <!--fin item 1-->
 
+                      <!-- item 2 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
+                            <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                    <img class="img-fluid w-100" src="img/nutrisourceseniorcat_chicken.png" alt="Concentrado NutriSource Senior Cat Weight Management">
+                                </div>
+                                <div class="text-start p-4">
+                                    <h6> <strong>NutriSource</strong> Senior Cat Weight Management </h6>
+                                         <p class="text-body me-1 mb-0">3 kilos</p>
+                                    <p class="text-primary me-1 mb-0">₡15.070.00</p>                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Senior%20Cat%20Weight%20Management%203%20kilos" target="_blank">
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--fin item 2-->
 
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                         <!-- item 3 -->
+                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                    <img class="img-fluid w-100" src="img/NS_CatKittenChickenSalmonLiver.png" alt="Concentrado NutriSource Cat and Kitten Chicken Salmon Liver">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                <div class="text-start p-4">
+                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Salmon & Liver </h6>
+                                         <p class="text-body me-1 mb-0">3 kilos</p>
+                                    <p class="text-primary me-1 mb-0">₡16.420,00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%2C%20Salmon%20%26%20Liver%203%20kilos" target="_blank">
+                                        Comprar
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <!--fin item 3-->
+
+                     <!-- item 4 -->
+                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                    <img class="img-fluid w-100" src="img/NS_Can_ChickRice_Cat.png" alt="Concentrado NutriSource Cat and Kitten Chicken and Rice enlatado">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                <div class="text-start p-4">
+                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken & Rice Enlatado</h6>
+                                         <p class="text-body me-1 mb-0">156 gramos</p>
+                                    <p class="text-primary me-1 mb-0">₡2.450,00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%20Enlatado%20156%20gramos" target="_blank">
+                                        Comprar
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <!--fin item 4-->
+                        
+                          <!-- item 5 -->
+                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                    <img class="img-fluid w-100" src="img/NS_Can_ChickTurkey_Cat.png" alt="Concentrado NutriSource Cat and Kitten Chicken, Turkey, Lamb and Fish enlatado">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                <div class="text-start p-4">
+                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Turkey & Lamb Enlatado</h6>
+                                         <p class="text-body me-1 mb-0">156 gramos</p>
+                                    <p class="text-primary me-1 mb-0">₡3.280,00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
+                                        Comprar
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <!--fin item 5-->
+
+                         <!-- item 6 -->
+                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                     <img class="img-fluid w-100" src="img/NS_Can_ChickTurkFish_Cat-2018.png" alt="Concentrado NutriSource Cat and Kitten Chicken Salmon Liver">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                 <div class="text-start p-4">
+                                       <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Turkey, Lamb & Fish Enlatado</h6>
+                                        <p class="text-body me-1 mb-0">156 gramos</p>
+                                        <p class="text-primary me-1 mb-0">₡3.578,00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
+                                     Comprar
+                                    </a>
+                                </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                         <!--fin item 6-->
+                        
+                         <!-- item 7 -->
+                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                     <img class="img-fluid w-100" src="img/1st-choice_kitten_chickenformula.jpeg" alt="1st Choice Healthy Start Chicken Formula">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                 <div class="text-start p-4">
+                                       <h6> <strong>1st Choice</strong> Kitten Healthy Start Chicken Formula</h6>
+                                        <p class="text-body me-1 mb-0">5.44 kilos</p>
+                                        <p class="text-primary me-1 mb-0">₡24,509.00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
+                                     Comprar
+                                    </a>
+                                </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                         <!--fin item 7-->
+
+                         <!-- item 8 -->
+                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
+                                     <img class="img-fluid w-100" src="img/1st-Choice-cat_weight-control.jpeg" alt="1st Choice Weight Control Chicken Formula">
                                 </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                 <div class="text-start p-4">
+                                       <h6> <strong>1st Choice</strong> Cat Weight Control Chicken Formula</h6>
+                                        <p class="text-body me-1 mb-0">5.44 kilos</p>
+                                        <p class="text-primary me-1 mb-0">₡28,769.00</p>                                    
                                 </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
+                                <div class="d-flex">
+                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
+                                     Comprar
+                                    </a>
+                                </div>
                                 </div>
                             </div>
-                        </div>
+                         <!--fin item 8-->
+
+                        
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">

@@ -303,10 +303,14 @@ font-size: 1rem;
 
 .product-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border-radius: 8px;
 }
 
 .product-item img {
     transition: .5s;
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
 }
 
 .product-item:hover img {
@@ -464,6 +468,20 @@ background: #FFFFFF;
     border-radius: 8px;
 }
 
-.marca {
-    font-weight: bolder;
+.strong {
+    font-weight: 700
 }
+
+.btn-compra {
+background: white;
+color: var(--primary) ;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-top: 1px solid #CFD1D6;
+}
+
+.btn-compra:hover {
+background: var(--primary);
+color: white;
+}
+
