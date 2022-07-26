@@ -200,6 +200,13 @@ h1, h2, h3, h4, h5, h6{
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
+    background: url(../img/) top right no-repeat;
+    background-size:cover;
+}
+
+.page-headerservicios {
+    padding-top: 12rem;
+    padding-bottom: 6rem;
     background: url(../img/servicios2.jpg) top right no-repeat;
     background-size:cover;
 }
