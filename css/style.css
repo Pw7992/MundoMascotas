@@ -142,6 +142,10 @@ font-size: 1rem;
     color: var(--secondary);
 }
 
+.btn-responsive {
+    color: white;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
@@ -310,10 +314,14 @@ font-size: 1rem;
 
 .product-item {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    border-radius: 8px;
 }
 
 .product-item img {
     transition: .5s;
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
 }
 
 .product-item:hover img {
@@ -322,6 +330,10 @@ font-size: 1rem;
 
 .product-item small a:hover {
     color: var(--primary) !important;
+}
+
+.text-productos{
+min-height: 57.69px;
 }
 
 
@@ -471,29 +483,25 @@ background: #FFFFFF;
     border-radius: 8px;
 }
 
-.marca {
-    font-weight: bolder;
+.strong {
+    font-weight: 700
 }
 
-.btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: #0df053;
-    color: #FFFFFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(red, green, blue, alpha);
-    z-index: 100;
+.btn-compra {
+background: white;
+color: var(--primary) ;
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-top: 1px solid #CFD1D6;
 }
-.btn-wsp:hover{
-    text-decoration: none;
-    color:#0df053;
-    background: #FFFFFF;
+
+.btn-compra:hover {
+background: var(--primary);
+color: white;
+}
+
+.marca {
+    font-weight: bolder;
 }
 
 .btn-responsive {
