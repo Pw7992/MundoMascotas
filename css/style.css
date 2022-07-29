@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     src: url(OpenSans.ttf);
 }
 
@@ -78,12 +78,21 @@ font-size: 1rem;
     transition: .5s;
 }
 
-.btn.btn-primary,
-.btn.btn-secondary,
 .btn.btn-outline-primary:hover,
 .btn.btn-outline-secondary:hover {
     color: #FFFFFF;
 }
+
+.btn.btn-primary {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.btn.btn-secondary {
+    color: var(--primary);
+    font-weight: 600;
+}
+
 
 .btn-square {
     width: 38px;
@@ -488,16 +497,16 @@ background: #FFFFFF;
 }
 
 .btn-compra {
-background: white;
-color: var(--primary) ;
+background:var(--primary);
+color: white;
 border-bottom-right-radius: 8px;
 border-bottom-left-radius: 8px;
 border-top: 1px solid #CFD1D6;
 }
 
 .btn-compra:hover {
-background: var(--primary);
-color: white;
+background: white;
+color: var(--primary);
 }
 
 .marca {
