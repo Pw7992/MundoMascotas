@@ -249,7 +249,7 @@ font-size: 1rem;
 
 .page-headerservicios {
     padding-top: 12rem;
-    padding-bottom: 6rem;
+    /*padding-bottom: 1rem;*/
     /*background: url(../img/perrodoctor.png) top right no-repeat;*/
     background-size:cover;
 }
