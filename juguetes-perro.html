@@ -161,24 +161,24 @@
  <!-- Como comprar End -->
 
      <!-- Product Start -->
-     <div class="container-xxl py-5" x-data="{filtro:'todos'}">
+     <div class="container-xxl py-5" x-data="{filtro:'todos', verMas:false }">
         <div class="container">
             <div class="row g-0 gx-5 align-items-end">
                 <div class="col-lg-6">   
                 </div>
                 <div class="col-lg-6 text-start text-lg-end wow slideInRight" >
-                    <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
-                        <li class="nav-item me-2">
+                    <ul class="nav nav-pills d-inline-flex justify-content-start mb-5">
+                        <li class="nav-item me-2 mb-1">
                             <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" x-on:click="filtro='todos'">Todos</a>
                         </li>
-                        <li class="nav-item me-2">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" x-on:click="filtro='concentrado'">Concentrado</a>
+                        <li class="nav-item me-2 mb-1">
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill" x-on:click="filtro='mordedor'">Mordedor</a>
                         </li>
-                        <li class="nav-item me-2">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='enlatado'">Enlatado</a>
+                        <li class="nav-item me-2 mb-1">
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='tela'">Tela</a>
                         </li>
-                        <li class="nav-item me-0">
-                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='treats'">Treats</a>
+                        <li class="nav-item me-0 mb-1">
+                            <a class="btn btn-outline-primary border-2 filtros" data-bs-toggle="pill"  x-on:click="filtro='lanza'">Lanza</a>
                         </li>
                        
                     </ul>
@@ -188,39 +188,45 @@
                 <div class="tab-pane fade show p-0 active">
                     <div class="row g-4">
 
-                        <!-- item 1 -->
-                        <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
+                         <!-- item 1 -->
+                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'mordedor' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid" src="img/nutrisourcekitten_chickenrice.png" alt="Concentrado NutriSource Cat and Kitten Chicken & Rice ">
+                                    <img class="img-fluid" src="img/Kong_pequeno_rojo.jpeg"
+                                        alt="Kong Classic">
                                 </div>
                                 <div class="text-start p-4">
-                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken & Rice </h6>
-                                         <p class="text-body me-1 mb-0">3 kilos</p>
-                                    <p class="text-primary me-1 mb-0">₡13.705.00</p>                                    
+                                    <h6> <strong>Kong</strong> Kong-Classic</h6>
+                                    <p class="text-body me-1 mb-0">Small</p>
+                                    <p class="text-primary me-1 mb-0">₡7.010,00</p>
                                 </div>
                                 <div class="d-flex">
-                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank">
+                                    <a class="w-100 text-center py-2 btn-compra"
+                                        href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                        target="_blank">
                                         Comprar
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    <!--fin item 1-->
+                        <!--fin item 1-->
 
-                      <!-- item 2 -->
-                        <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
+                         <!-- item 2 -->
+                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'mordedor' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/nutrisourceseniorcat_chicken.png" alt="Concentrado NutriSource Senior Cat Weight Management">
+                                    <img class="img-fluid" src="img/Kong-mediano-morado.jpeg"
+                                        alt="Kong Senior">
                                 </div>
                                 <div class="text-start p-4">
-                                    <h6> <strong>NutriSource</strong> Senior Cat Weight Management </h6>
-                                         <p class="text-body me-1 mb-0">3 kilos</p>
-                                    <p class="text-primary me-1 mb-0">₡15.070.00</p>                                    
+                                    <h6> <strong>Kong</strong> Kong-Senior</h6>
+                                    <p class="text-body me-1 mb-0">Medium</p>
+                                    <p class="text-primary me-1 mb-0">₡8.410,00</p>
                                 </div>
                                 <div class="d-flex">
-                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Senior%20Cat%20Weight%20Management%203%20kilos" target="_blank">
+                                    <a class="w-100 text-center py-2 btn-compra"
+                                        href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                        target="_blank">
                                         Comprar
                                     </a>
                                 </div>
@@ -229,18 +235,20 @@
                         <!--fin item 2-->
 
                          <!-- item 3 -->
-                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro == 'todos'">
+                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'mordedor' || filtro == 'todos'">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/NS_CatKittenChickenSalmonLiver.png" alt="Concentrado NutriSource Cat and Kitten Chicken Salmon Liver">
+                                    <img class="img-fluid" src="img/kong-large-negro.jpeg" alt="Kong Extreme">
                                 </div>
                                 <div class="text-start p-4">
-                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Salmon & Liver </h6>
-                                         <p class="text-body me-1 mb-0">3 kilos</p>
-                                    <p class="text-primary me-1 mb-0">₡16.420,00</p>                                    
+                                    <h6> <strong>Kong</strong> Kong-Extreme</h6>
+                                    <p class="text-body me-1 mb-0">Large</p>
+                                    <p class="text-primary me-1 mb-0">₡12.250,00</p>
                                 </div>
                                 <div class="d-flex">
-                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%2C%20Salmon%20%26%20Liver%203%20kilos" target="_blank">
+                                    <a class="w-100 text-center py-2 btn-compra"
+                                        href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                        target="_blank">
                                         Comprar
                                     </a>
                                 </div>
@@ -248,701 +256,236 @@
                         </div>
                         <!--fin item 3-->
 
-                     <!-- item 4 -->
-                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/NS_Can_ChickRice_Cat.png" alt="Concentrado NutriSource Cat and Kitten Chicken and Rice enlatado">
-                                </div>
-                                <div class="text-start p-4">
-                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken & Rice Enlatado</h6>
-                                         <p class="text-body me-1 mb-0">156 gramos</p>
-                                    <p class="text-primary me-1 mb-0">₡2.450,00</p>                                    
-                                </div>
-                                <div class="d-flex">
-                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%20Enlatado%20156%20gramos" target="_blank">
-                                        Comprar
-                                    </a>
-                                </div>
+                     <!-- item 4-->
+                     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'mordedor' || filtro == 'todos'">
+                        <div class="product-item">
+                            <div class="position-relative bg-light overflow-hidden">
+                                <img class="img-fluid" src="img/MPets_SqueakyStickVerde.jpeg" alt="Squeaky Stick Green MPets ">
                             </div>
-                        </div>
-                        <!--fin item 4-->
-                        
-                          <!-- item 5 -->
-                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/NS_Can_ChickTurkey_Cat.png" alt="Concentrado NutriSource Cat and Kitten Chicken, Turkey, Lamb and Fish enlatado">
-                                </div>
-                                <div class="text-start p-4">
-                                    <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Turkey & Lamb Enlatado</h6>
-                                         <p class="text-body me-1 mb-0">156 gramos</p>
-                                    <p class="text-primary me-1 mb-0">₡3.280,00</p>                                    
-                                </div>
-                                <div class="d-flex">
-                                    <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
-                                        Comprar
-                                    </a>
-                                </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>MPets</strong> Squeaky Stick Green</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡4.250,00</p>
                             </div>
-                        </div>
-                        <!--fin item 5-->
-
-                         <!-- item 6 -->
-                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro == 'todos'">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                     <img class="img-fluid w-100" src="img/NS_Can_ChickTurkFish_Cat-2018.png" alt="Concentrado NutriSource Cat and Kitten Chicken Salmon Liver">
-                                </div>
-                                 <div class="text-start p-4">
-                                       <h6> <strong>NutriSource</strong> Cat & Kitten Chicken, Turkey, Lamb & Fish Enlatado</h6>
-                                        <p class="text-body me-1 mb-0">156 gramos</p>
-                                        <p class="text-primary me-1 mb-0">₡3.578,00</p>                                    
-                                </div>
-                                <div class="d-flex">
-                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Turkey%20%26%20Lamb%20Enlatado%20156%20gramos" target="_blank">
-                                     Comprar
-                                    </a>
-                                </div>
-                                </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"
+                                    href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                    target="_blank">
+                                    Comprar
+                                </a>
                             </div>
-                         <!--fin item 6-->
-                        
-                         <!-- item 7 -->
-                          <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                     <img class="img-fluid w-100" src="img/1st-choice_kitten_chickenformula.jpeg" alt="1st Choice Healthy Start Chicken Formula">
-                                </div>
-                                 <div class="text-start p-4">
-                                       <h6 class="text-productos"> <strong>1st Choice</strong> Kitten Healthy Start Chicken Formula</h6>
-                                        <p class="text-body me-1 mb-0">5.44 kilos</p>
-                                        <p class="text-primary me-1 mb-0">₡24.509,00</p>                                    
-                                </div>
-                                <div class="d-flex">
-                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Kitten%20Healthy%20Start%20Chicken%20Formula%205.44%20kilos" target="_blank">
-                                     Comprar
-                                    </a>
-                                </div>
-                                </div>
-                            </div>
-                         <!--fin item 7-->
-
-                         <!-- item 8 -->
-                         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                     <img class="img-fluid w-100" src="img/1st-Choice-cat_weight-control.jpeg" alt="1st Choice Weight Control Chicken Formula">
-                                </div>
-                                 <div class="text-start p-4">
-                                       <h6 class="text-productos"> <strong>1st Choice</strong> Cat Weight Control Chicken Formula</h6>
-                                        <p class="text-body me-1 mb-0">5.44 kilos</p>
-                                        <p class="text-primary me-1 mb-0">₡28.769,00</p>                                    
-                                </div>
-                                <div class="d-flex">
-                                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Cat%20Weight%20Control%20Chicken%20Formula%205.44%20kilos" target="_blank">
-                                     Comprar
-                                    </a>
-                                </div>
-                                </div>
-                            </div>
-                         <!--fin item 8-->
-
-                 <!-- item 9-->
-                 <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-                    <div class="product-item">
-                        <div class="position-relative bg-light overflow-hidden">
-                             <img class="img-fluid w-100" src="img/1st-Choice_HealthySkin&Coat.png" alt="1st Choice Adult Healthy Skin & Coat">
-                        </div>
-                         <div class="text-start p-4">
-                               <h6 class="text-productos"> <strong>1st Choice</strong> Adult Healthy Skin & Coat Salmon Formula</h6>
-                                <p class="text-body me-1 mb-0">5.44 kilos</p>
-                                <p class="text-primary me-1 mb-0">₡25.119,00</p>                                    
-                        </div>
-                        <div class="d-flex">
-                             <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                             Comprar
-                            </a>
-                        </div>
                         </div>
                     </div>
-                 <!--fin item 9-->
-                 
-                <!-- item 10-->
-                 <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-                    <div class="product-item">
-                        <div class="position-relative bg-light overflow-hidden">
-                             <img class="img-fluid w-100" src="img/1stChoice-HypoallergenicCat.png" alt="1st Choice Adult Hypoallergenic Formula with Duck">
-                        </div>
-                         <div class="text-start p-4">
-                               <h6 class="text-productos"> <strong>1st Choice</strong> Adult Hypoallergenic Formula with Duck</h6>
-                                <p class="text-body me-1 mb-0">2.7 kilos</p>
-                                <p class="text-primary me-1 mb-0">₡18.999,00 </p>                                    
-                        </div>
-                        <div class="d-flex">
-                             <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                             Comprar
-                            </a>
-                        </div>
+                    <!--fin item 4-->
+                        
+                         <!-- item 5-->
+                     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'mordedor' || filtro == 'todos'">
+                        <div class="product-item">
+                            <div class="position-relative bg-light overflow-hidden">
+                                <img class="img-fluid" src="img/MPets_funbone_azul.jpeg" alt="Squeaky Stick Green MPets ">
+                            </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>MPets</strong> Funbone Blue</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡4.100,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"
+                                    href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                    target="_blank">
+                                    Comprar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                 <!--fin item 10->
+                    <!--fin item 5-->
 
-     <! -- item 11-->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/1stChoice-Adult_UrinaryCare.png" alt="1st Choice Adult Urinary Health Chicken Formula">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>1st Choice</strong> Adult Urinary Health Chicken Formula</h6>
-                    <p class="text-body me-1 mb-0">5.44 kilos</p>
-                    <p class="text-primary me-1 mb-0">₡31.569,00 </p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 11-->
+                       <!-- item 6-->
+                       <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'lanza' || filtro == 'todos'">
+                        <div class="product-item">
+                            <div class="position-relative bg-light overflow-hidden">
+                                <img class="img-fluid" src="img/zee.dog-flying_vinyl_frisbee.jpeg" alt="Flying Vinyl Frisbee Zee.Dog">
+                            </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Zee.Dog</strong> Flying Vinyl Frisbee</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡8.900,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"
+                                    href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                    target="_blank">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin item 6-->
+
+                      <!-- item 7-->
+                      <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'lanza' || filtro == 'todos'">
+                        <div class="product-item">
+                            <div class="position-relative bg-light overflow-hidden">
+                                <img class="img-fluid" src="img/zee_dog_toy_cannon_ball.webp" alt="Cannon Ball Zee.Dog ">
+                            </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Zee.Dog</strong> Cannon Ball</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡7.080,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"
+                                    href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                    target="_blank">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin item 7-->
+
+                    <!-- item 8-->
+                    <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'lanza' || filtro == 'todos'">
+                        <div class="product-item">
+                            <div class="position-relative bg-light overflow-hidden">
+                                <img class="img-fluid" src="img/zee.dog_alien_flex_rubber_toy_space_station.webp" alt="Alien Flex Space Station Zee.Dog ">
+                            </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Zee.Dog</strong> Alien Flex SpaceStation</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡8.780,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"
+                                    href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos"
+                                    target="_blank">
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin item 8-->
+
+                      <!-- item 9-->
+                      <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                        <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                     <img class="img-fluid" src="img/zee.dog_alien_flex_plush.webp" alt="Alien Flex Gro Zee.Dog">
+                                </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Zee.Dog</strong> Alien Flex Gro</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡8.500,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                            </div>
+                        </div>
+                        </div>
+                    <!--fin item 9-->
+
+                    <!-- item 10-->
+                    <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                        <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                     <img class="img-fluid" src="img/zee.dog_alien_flex_canvas_plush.webp" alt="Alien Flex Biggoe Zee.Dog">
+                                </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Zee.Dog</strong> Alien Flex Biggoe</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡8.500,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                            </div>
+                        </div>
+                        </div>
+                    <!--fin item 10-->
+
+                     <!-- item 11-->
+                     <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                        <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                     <img class="img-fluid" src="img/SnugArooz_sheldon_turtle.jpeg" alt="Snug Arooz Sheldon Turtle">
+                                </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Snug Arooz</strong> Sheldon Turtle</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡10.500,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                            </div>
+                        </div>
+                        </div>
+                    <!--fin item 11-->
+
+                    <!-- item 12-->
+                    <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                        <div class="product-item">
+                                <div class="position-relative bg-light overflow-hidden">
+                                     <img class="img-fluid" src="img/SnugArooz_olivia_octopus.jpeg" alt="Snug Arooz Olivia Octopus">
+                                </div>
+                            <div class="text-start p-4">
+                                <h6> <strong>Snug Arooz</strong> Olivia Octupus</h6>
+                                <p class="text-body me-1 mb-0">Unitalla</p>
+                                <p class="text-primary me-1 mb-0">₡10.500,00</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                            </div>
+                        </div>
+                        </div>
+                    <!--fin item 12-->
+
+                     <!-- item 13-->
+                              <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                                <div class="product-item">
+                                        <div class="position-relative bg-light overflow-hidden">
+                                             <img class="img-fluid" src="img/SnugArooz_marty.jpeg" alt="Snug Arooz Marty Moose">
+                                        </div>
+                                    <div class="text-start p-4">
+                                        <h6> <strong>Snug Arooz</strong> Marty Moose</h6>
+                                        <p class="text-body me-1 mb-0">Unitalla</p>
+                                        <p class="text-primary me-1 mb-0">₡10.500,00</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                                    </div>
+                                </div>
+                                </div>
+                            <!--fin item 13-->
+
+                            <!-- item 14-->
+                            <div class="col-xl-3 col-lg-4 col-md-6" x-show="(verMas == true && filtro=='todos') || filtro == 'tela'">
+                                <div class="product-item">
+                                        <div class="position-relative bg-light overflow-hidden">
+                                             <img class="img-fluid" src="img/SnugArooz_turtle_hide&seek.jpeg" alt="Snug Arooz Turtle Hide N Seek">
+                                        </div>
+                                    <div class="text-start p-4">
+                                        <h6> <strong>Snug Arooz</strong> Turtle Hide N Seek</h6>
+                                        <p class="text-body me-1 mb-0">Unitalla</p>
+                                        <p class="text-primary me-1 mb-0">₡14.500,00</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a class="w-100 text-center py-2 btn-compra"  href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%20NutriSource%20Cat%20%26%20Kitten%20Chicken%20%26%20Rice%203%20kilos" target="_blank"> Comprar </a>
+                                    </div>
+                                </div>
+                                </div>
+                            <!--fin item 14-->
+
+                    
+                        
+    
+                        
      
-    <!-- item 12-->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'concentrado' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/1st-Choice_indoorVitality.png" alt="1st Choice Adult Indoor Vitality Chicken Formula">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>1st Choice</strong> Adult Indoor Vitality Chicken Formula</h6>
-                    <p class="text-body me-1 mb-0">5.44 kilos</p>
-                    <p class="text-primary me-1 mb-0">₡26.649,00 </p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 12->
-
-           <!-item 13-->
-           <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-            <div class="product-item">
-                <div class="position-relative bg-light overflow-hidden">
-                     <img class="img-fluid w-100" src="img/1st-choice_can_kitten_.png" alt="1st Choice Healthy Start Chicken Formula Enlatado">
-                </div>
-                 <div class="text-start p-4">
-                       <h6 class="text-productos"> <strong>1st Choice</strong> Kitten Healthy Start Chicken Enlatado</h6>
-                        <p class="text-body me-1 mb-0">156 gramos</p>
-                        <p class="text-primary me-1 mb-0">₡2.041,52</p>                                    
-                </div>
-                <div class="d-flex">
-                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                     Comprar
-                    </a>
-                </div>
-                </div>
-            </div>
-         <!--fin item 13-->
-         
-        <!-- item 14-->
-         <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-            <div class="product-item">
-                <div class="position-relative bg-light overflow-hidden">
-                     <img class="img-fluid w-100" src="img/1stch_can_healthyskincoat.png" alt="1st Choice Adult Healthy Skin & Coat Enlatado">
-                </div>
-                 <div class="text-start p-4">
-                       <h6 class="text-productos"> <strong>1st Choice</strong> Adult Healthy Skin & Coat Enlatado</h6>
-                        <p class="text-body me-1 mb-0">156 gramos</p>
-                        <p class="text-primary me-1 mb-0">₡2.100,50 </p>                                    
-                </div>
-                <div class="d-flex">
-                     <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                     Comprar
-                    </a>
-                </div>
-                </div>
-            </div>
-         <!--fin item 14->
-
-<! -- item 15-->
-<div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-<div class="product-item">
-    <div class="position-relative bg-light overflow-hidden">
-         <img class="img-fluid w-100" src="img/1stch_can_urinarycare.png" alt="1st Choice Adult Urinary Health Chicken Formula Enlatado">
-    </div>
-     <div class="text-start p-4">
-           <h6 class="text-productos"> <strong>1st Choice</strong> Adult Urinary Health Chicken Formula Enlatado</h6>
-            <p class="text-body me-1 mb-0">156 gramos</p>
-            <p class="text-primary me-1 mb-0">₡3.041,52</p>                                    
-    </div>
-    <div class="d-flex">
-         <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-         Comprar
-        </a>
-    </div>
-    </div>
-</div>
-<!--fin item 15-->
-
-<!-- item 16-->
-<div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-<div class="product-item">
-    <div class="position-relative bg-light overflow-hidden">
-         <img class="img-fluid w-100" src="img/1stch_can_indoorvitality.png" alt="1st Choice Adult Indoor Vitality Chicken Formula Enlatado">
-    </div>
-     <div class="text-start p-4">
-           <h6 class="text-productos"> <strong>1st Choice</strong> Adult Indoor Vitality Chicken Formula Enlatado</h6>
-            <p class="text-body me-1 mb-0">156 gramos</p>
-            <p class="text-primary me-1 mb-0">₡2.610,00</p>                                    
-    </div>
-    <div class="d-flex">
-         <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-         Comprar
-        </a>
-    </div>
-    </div>
-</div>
-<!--fin item 16->
-
-    <!-item 17-->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/1stch_can__hypoallergenic.png" alt="1st Choice Adult Hypoallergenic Formula with Duck Enlatado">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>1st Choice</strong> Adult Hypoallergenic Formula with Duck Enlatado</h6>
-                    <p class="text-body me-1 mb-0">156 gramos</p>
-                    <p class="text-primary me-1 mb-0">₡3.999,00 </p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Adult%20Healthy%20Skin%20%26%20Coat%20Salmon%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 17->
-
-     <!-item 18 -->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'enlatado' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/1stch_can_senior_maturelessmovement.png" alt="1st Choice - Mature or Less Active">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>1st Choice</strong> Mature or Less Active</h6>
-                    <p class="text-body me-1 mb-0">156 gramos</p>
-                    <p class="text-primary me-1 mb-0">₡2.769,00</p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Cat%20Weight%20Control%20Chicken%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 18-->
-
-    <!--item 19 -->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'treats' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/Waldo_treat_gato_semimoist.jpeg" alt="Waldo Salmon treats Semimoist">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>Waldo</strong> Treats semih&#250;medos Salm&#xf3;n </h6>
-                    <p class="text-body me-1 mb-0">85 gramos</p>
-                    <p class="text-primary me-1 mb-0">₡1.300,00</p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Cat%20Weight%20Control%20Chicken%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 19-->
-
-     <!--item 20 -->
-     <div class="col-xl-3 col-lg-4 col-md-6" x-show="filtro == 'treats' || filtro =='todos'">
-        <div class="product-item">
-            <div class="position-relative bg-light overflow-hidden">
-                 <img class="img-fluid w-100" src="img/MasQPets_HigadoGatos100.webp" alt="MasQPets Treats Higado de Cerdo">
-            </div>
-             <div class="text-start p-4">
-                   <h6 class="text-productos"> <strong>MasQPets</strong> Treats H&#237;gado de Cerdo </h6>
-                    <p class="text-body me-1 mb-0">100 gramos</p>
-                    <p class="text-primary me-1 mb-0">₡2.020,00</p>                                    
-            </div>
-            <div class="d-flex">
-                 <a class="w-100 text-center py-2 btn-compra" href="https://wa.me/987654321?text=Hola%2C%20quiero%20comprar%201st%20Choice%20Cat%20Weight%20Control%20Chicken%20Formula%205.44%20kilos" target="_blank">
-                 Comprar
-                </a>
-            </div>
-            </div>
-        </div>
-     <!--fin item 20-->
-                        <!--aqui empieza el boton de ver más-->
+     <!--aqui empieza el boton de ver más-->
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Ver m&#225;s</a>
-                        </div>
+                            <button class="btn btn-primary rounded-pill py-3 px-5 btn-ver-mas" x-on:click="verMas=true" x-show="filtro == 'todos'" x-bind:disabled="verMas">Ver m&#225;s</button>                        </div>
                     </div>
                 </div>
-                <div id="tab-2" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-3" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6">
-                            <div class="product-item">
-                                <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
-                                    <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
-                                </div>
-                                <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
-                                </div>
-                                <div class="d-flex border-top">
-                                    <small class="w-50 text-center border-end py-2">
-                                        <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
-                                    </small>
-                                    <small class="w-50 text-center py-2">
-                                        <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
-                        </div>
-                    </div>
-                </div>
+               
+             
             </div>
         </div>
     </div>
