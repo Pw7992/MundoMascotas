@@ -502,7 +502,7 @@ min-height: 57.69px;
 .footer .copyright {
     padding: 25px 0;
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    border-top: 1px solid #63BD9E;
 }
 
 .footer .copyright a {
