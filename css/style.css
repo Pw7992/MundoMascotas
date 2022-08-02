@@ -389,6 +389,11 @@ font-size: 1rem;
 min-height: 57.69px;
 }
 
+.text-oferta{
+    color: red;
+    font-size: smaller;
+}
+
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item img {
